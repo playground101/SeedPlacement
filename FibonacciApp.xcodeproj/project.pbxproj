@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F46BF12C2381AC080011DCB4 /* FibonacciScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = F46BF12B2381AC080011DCB4 /* FibonacciScene.swift */; };
+		F46BF12E2381AC330011DCB4 /* FibonacciScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = F46BF12D2381AC320011DCB4 /* FibonacciScene.sks */; };
 		F49B2FAA236F3CC2008AF140 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49B2FA9236F3CC2008AF140 /* AppDelegate.swift */; };
 		F49B2FAC236F3CC2008AF140 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49B2FAB236F3CC2008AF140 /* ViewController.swift */; };
 		F49B2FAF236F3CC2008AF140 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F49B2FAD236F3CC2008AF140 /* Main.storyboard */; };
@@ -14,6 +16,7 @@
 		F49B2FB4236F3CC6008AF140 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F49B2FB2236F3CC6008AF140 /* LaunchScreen.storyboard */; };
 		F49B2FBF236F3CC6008AF140 /* FibonacciAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49B2FBE236F3CC6008AF140 /* FibonacciAppTests.swift */; };
 		F49B2FCA236F3CC6008AF140 /* FibonacciAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49B2FC9236F3CC6008AF140 /* FibonacciAppUITests.swift */; };
+		F49B2FD8236F4887008AF140 /* FibonacciData.json in Resources */ = {isa = PBXBuildFile; fileRef = F49B2FD7236F4887008AF140 /* FibonacciData.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F46BF12B2381AC080011DCB4 /* FibonacciScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FibonacciScene.swift; sourceTree = "<group>"; };
+		F46BF12D2381AC320011DCB4 /* FibonacciScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = FibonacciScene.sks; sourceTree = "<group>"; };
 		F49B2FA6236F3CC2008AF140 /* FibonacciApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FibonacciApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F49B2FA9236F3CC2008AF140 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F49B2FAB236F3CC2008AF140 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +52,7 @@
 		F49B2FC5236F3CC6008AF140 /* FibonacciAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FibonacciAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F49B2FC9236F3CC6008AF140 /* FibonacciAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FibonacciAppUITests.swift; sourceTree = "<group>"; };
 		F49B2FCB236F3CC6008AF140 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F49B2FD7236F4887008AF140 /* FibonacciData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = FibonacciData.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,7 +108,10 @@
 				F49B2FAD236F3CC2008AF140 /* Main.storyboard */,
 				F49B2FB0236F3CC6008AF140 /* Assets.xcassets */,
 				F49B2FB2236F3CC6008AF140 /* LaunchScreen.storyboard */,
+				F46BF12B2381AC080011DCB4 /* FibonacciScene.swift */,
+				F46BF12D2381AC320011DCB4 /* FibonacciScene.sks */,
 				F49B2FB5236F3CC6008AF140 /* Info.plist */,
+				F49B2FD7236F4887008AF140 /* FibonacciData.json */,
 			);
 			path = FibonacciApp;
 			sourceTree = "<group>";
@@ -231,7 +240,9 @@
 			files = (
 				F49B2FB4236F3CC6008AF140 /* LaunchScreen.storyboard in Resources */,
 				F49B2FB1236F3CC6008AF140 /* Assets.xcassets in Resources */,
+				F49B2FD8236F4887008AF140 /* FibonacciData.json in Resources */,
 				F49B2FAF236F3CC2008AF140 /* Main.storyboard in Resources */,
+				F46BF12E2381AC330011DCB4 /* FibonacciScene.sks in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,6 +268,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F49B2FAC236F3CC2008AF140 /* ViewController.swift in Sources */,
+				F46BF12C2381AC080011DCB4 /* FibonacciScene.swift in Sources */,
 				F49B2FAA236F3CC2008AF140 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
