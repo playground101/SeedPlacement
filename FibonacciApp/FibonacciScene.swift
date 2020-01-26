@@ -47,7 +47,7 @@ class FibonacciScene: SKScene {
         seeds = seedNumber
         oldDegrees = ratio * 360
         for i in 1...seeds {
-            Timer.scheduledTimer(withTimeInterval: 0.01, repeats: false) { (timer) in
+            Timer.scheduledTimer(withTimeInterval: 0.0, repeats: false) { (timer) in
                 self.spawnCircle()
             }
         }

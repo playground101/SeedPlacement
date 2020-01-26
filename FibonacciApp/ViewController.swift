@@ -10,20 +10,28 @@ import UIKit
 import SpriteKit
 
 class ViewController: UIViewController {
-    var seeds: Int?
-    var ratio: Double? = 0.1
+    var seeds: Int = 100
+    var ratio: Double = 1.61803398875
     @IBOutlet weak var fibonacciSKView: SKView!
     @IBOutlet weak var seedNumber: UILabel!
     @IBAction func increaseRatio(_ sender: UIStepper) {
-        ratio? += Double(sender.stepValue)
+        ratio = Double(sender.value)
         print("sender:\(sender.value)")
         //print("Description: \(ratio?.description)")
-        ratioTextField.text = ratio?.description
-        if let ratio = ratio, let seeds = seeds {
-            fib.reset()
-            fib.start(seedNumber: seeds, ratio: ratio)
-            print("seeds: \(seeds)")
+        ratioTextField.text = String(ratio)
+        fib.reset()
+        fib.start(seedNumber: seeds, ratio: ratio)
+        print("seeds: \(seeds)")
+    }
+    func roundRatio() {
+        let splitRatio = ratioTextField.text?.split(separator: ".")
+        if let splitRatioArray = splitRatio {
+            let factor = splitRatioArray[1].count
+            if let doubleRatio = Double(ratioTextField.text ?? "1.61803398875") {
+                ratioTextField.text = String(round(doubleRatio * pow(10.0, Double(factor)))/pow(10.0, Double(factor)))
+            }
         }
+        
     }
     @IBOutlet weak var ratioIncrement: UIStepper!
     var fib = FibonacciScene()
@@ -35,12 +43,16 @@ class ViewController: UIViewController {
         ratioTextField.delegate = self
         seedTextField.delegate = self
         incrementField.delegate = self
+        ratioIncrement.value = ratio ?? 0
+        ratioTextField.text = String(ratio)
+        seedTextField.text = String(seeds)
         if let scene = SKScene(fileNamed: "FibonacciScene") {
             // Set the scale mode to scale to fit the window
             scene.scaleMode = .aspectFit
             fib = scene as! FibonacciScene
             // Present the scene
             fibonacciSKView.presentScene(scene)
+            fib.start(seedNumber: seeds, ratio: ratio)
         }
     }
 }
@@ -50,13 +62,17 @@ extension ViewController: UITextFieldDelegate {
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         print(textField)
         self.view.endEditing(true)
-        seeds = Int(seedTextField.text ?? "10")
-        ratio = Double(ratioTextField.text ?? "0.1")
-            let increment = Double(incrementField.text ?? "0.001")
-        ratioIncrement.stepValue = increment ?? 0.001
-        if let seeds = seeds, let ratio = ratio {
-            fib.start(seedNumber: seeds, ratio: ratio)
+        if let seedText = seedTextField.text, let ratioText = ratioTextField.text {
+            seeds = Int(seedText) ?? seeds
+            ratio = Double(ratioText) ?? ratio
         }
+        
+        if let increase = incrementField.text {
+            let increment = Double(increase)
+            ratioIncrement.stepValue = increment ?? 0.001
+        }
+        ratioIncrement.value = ratio ?? 0
+        fib.start(seedNumber: seeds, ratio: ratio)
         return true
     }
 }

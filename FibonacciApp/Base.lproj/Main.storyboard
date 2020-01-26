@@ -78,7 +78,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation" keyboardAppearance="alert" returnKeyType="done"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="10" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Cdp-Wl-0wP">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="100" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Cdp-Wl-0wP">
                                 <rect key="frame" x="188.5" y="462.5" width="112" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="112" id="Wwc-nF-B8V"/>
@@ -99,7 +99,7 @@
                                     <action selector="increaseRatio:" destination="BYZ-38-t0r" eventType="valueChanged" id="Xk1-B6-jxd"/>
                                 </connections>
                             </stepper>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="0.001" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cL0-ju-pcx">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="0.001" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cL0-ju-pcx">
                                 <rect key="frame" x="124" y="392" width="112" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="112" id="APM-XU-row"/>
