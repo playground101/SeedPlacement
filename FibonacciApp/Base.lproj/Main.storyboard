@@ -110,6 +110,15 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad" keyboardAppearance="alert" returnKeyType="done"/>
                             </textField>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.0" contentMode="scaleToFill" text="Functionality: The Ratio button uses " textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="tqc-GM-HGY">
+                                <rect key="frame" x="0.0" y="507" width="375" height="160"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="160" id="X69-gI-NZ9"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -122,14 +131,17 @@
                             <constraint firstItem="1as-OD-mCD" firstAttribute="leading" secondItem="qLh-ah-B1b" secondAttribute="trailing" constant="7.5" id="AB4-fk-BZZ"/>
                             <constraint firstItem="cL0-ju-pcx" firstAttribute="top" secondItem="1as-OD-mCD" secondAttribute="bottom" constant="44" id="Aj7-EP-Xhz"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Ax2-Yq-keF" secondAttribute="trailing" constant="259" id="BfT-s4-9mU"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="tqc-GM-HGY" secondAttribute="bottom" id="BtO-Ok-QeX"/>
                             <constraint firstItem="Cdp-Wl-0wP" firstAttribute="leading" secondItem="MxW-cK-iAI" secondAttribute="trailing" constant="7.5" id="CxZ-gM-Ols"/>
                             <constraint firstItem="1as-OD-mCD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="77" id="DuW-zM-KBs"/>
                             <constraint firstItem="NeK-7b-LoO" firstAttribute="trailing" secondItem="ykX-RT-uQV" secondAttribute="trailing" id="EgL-V4-lxx"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="1as-OD-mCD" secondAttribute="trailing" constant="171" id="F8q-2S-gDQ"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ykX-RT-uQV" secondAttribute="bottom" constant="366" id="GNo-lX-ZKO"/>
+                            <constraint firstItem="tqc-GM-HGY" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="HWQ-R2-BDR"/>
                             <constraint firstItem="Cdp-Wl-0wP" firstAttribute="centerY" secondItem="MxW-cK-iAI" secondAttribute="centerY" id="Ike-W1-BTN"/>
                             <constraint firstItem="MxW-cK-iAI" firstAttribute="top" secondItem="qLh-ah-B1b" secondAttribute="bottom" constant="120" id="J0m-YD-H7F"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="MxW-cK-iAI" secondAttribute="trailing" symbolic="YES" id="LIL-Hf-HYf"/>
+                            <constraint firstItem="tqc-GM-HGY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Onq-pU-Udv"/>
                             <constraint firstItem="qLh-ah-B1b" firstAttribute="top" secondItem="ykX-RT-uQV" secondAttribute="bottom" constant="22" id="Phl-lC-ZfA"/>
                             <constraint firstItem="cL0-ju-pcx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="124" id="SNZ-s3-9dU"/>
                             <constraint firstItem="qLh-ah-B1b" firstAttribute="leading" secondItem="ykX-RT-uQV" secondAttribute="leading" constant="16" id="XNK-m4-Ami"/>
@@ -142,9 +154,12 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="3y9-xg-Dbs" secondAttribute="trailing" constant="41" id="cc0-XD-KYH"/>
                             <constraint firstItem="NeK-7b-LoO" firstAttribute="leading" secondItem="ykX-RT-uQV" secondAttribute="leading" id="eO6-uy-hsy"/>
                             <constraint firstItem="ykX-RT-uQV" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="kfT-Gw-ehV"/>
+                            <constraint firstItem="tqc-GM-HGY" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="mTq-wx-W7v"/>
                             <constraint firstItem="3y9-xg-Dbs" firstAttribute="top" secondItem="1as-OD-mCD" secondAttribute="top" id="p5i-kx-PUK"/>
                             <constraint firstItem="Ax2-Yq-keF" firstAttribute="leading" secondItem="qLh-ah-B1b" secondAttribute="leading" id="sCx-C9-VQl"/>
+                            <constraint firstItem="tqc-GM-HGY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="vDm-SO-S0d"/>
                             <constraint firstItem="3y9-xg-Dbs" firstAttribute="centerY" secondItem="1as-OD-mCD" secondAttribute="centerY" id="wBh-ip-5A3"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="tqc-GM-HGY" secondAttribute="trailing" id="wg9-yJ-KsE"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
